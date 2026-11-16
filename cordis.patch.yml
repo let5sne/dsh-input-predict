@@ -1,0 +1,4 @@
+- insert:
+    - id: input-predict
+      name: '@let5sne/dsh-input-predict'
+      config: {}
