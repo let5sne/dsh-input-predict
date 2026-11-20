@@ -461,7 +461,7 @@ function createPredictionStore(storage) {
 // web/client.js
 var h = import_react.default.createElement;
 var NS = "input-predict";
-var BUILD = "20261116-placeholder3";
+var BUILD = "20261120-rc5";
 var ICON_SLOT = "conversation.input.right";
 var HINT_SLOT = "conversation.input.overlay";
 var CSS = `

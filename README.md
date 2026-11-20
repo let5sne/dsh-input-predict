@@ -2,7 +2,7 @@
 
 输入框为空时，根据当前会话预测用户的下一条消息，并以占位提示（placeholder）的形式显示在输入框内。提示不是草稿内容；用户按 Tab 后，才通过 DSH 的修订号保护接口插入真实草稿，不会自动发送。
 
-> 包名 `@let5sne/dsh-input-predict`，版本 1.0.0，MIT 许可证。支持 DSH **0.2.2-rc.3**。插件使用当前版本的局部输入标记核验编辑器身份，标记不匹配时会保守停用预测，不猜测其他输入框。通过 GitHub Release 分发，未发布到 npm。
+> 包名 `@let5sne/dsh-input-predict`，版本 1.0.1，MIT 许可证。支持 DSH **0.2.2**（`>=0.2.2-rc.3 <0.2.3-0`），已在 rc.3 与 rc.5 上验证。插件使用当前版本的局部输入标记核验编辑器身份，标记不匹配时会保守停用预测，不猜测其他输入框。通过 GitHub Release 分发，未发布到 npm。
 
 ## 已实现功能
 
@@ -72,7 +72,7 @@ Host 配置位于插件行 `input-predict` 的 `config`：
 
 ## 兼容性与已知限制
 
-- 仅面向当前安装版本 `0.2.2-rc.3` 开发。DSH 尚无公开的输入框身份、焦点、选区和输入法订阅契约；插件在自身槽位附近读取当前实现使用的 `data-conversation-content`、`data-composer-seat`、`data-composer-input`、`data-composer-card` 与 `data-trigger-menu` 标记，并严格核对 slot 的 `sessionId`。这些不是稳定公共 API，升级 DSH 后必须重新验证。
+- 兼容范围为 DSH 0.2.2 系列（`>=0.2.2-rc.3 <0.2.3-0`），已在 `0.2.2-rc.3` 与 `0.2.2-rc.5` 上核对。DSH 尚无公开的输入框身份、焦点、选区和输入法订阅契约；插件在自身槽位附近读取当前实现使用的 `data-conversation-content`、`data-composer-seat`、`data-composer-input`、`data-composer-card` 与 `data-trigger-menu` 标记，并严格核对 slot 的 `sessionId`。这些不是稳定公共 API，升级 DSH 后必须重新验证。
 - 无法唯一映射编辑器、会话身份不符、存在多个输入根、未知输入浮层或文档级菜单/对话框时，插件停止预测并保留原生 Tab。
 - 输入菜单无法仅靠 `defaultPrevented` 判断；插件直接检查菜单标记，存在菜单时不请求、不拦截按键。
 - 占位提示在 `conversation.input.overlay` 槽位内按原生占位文字的位置绘制，显示时仅隐藏本会话输入框的原生占位文字。字号或边距随 DSH 版本变化时可能出现轻微错位。

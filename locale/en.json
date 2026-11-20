@@ -1,6 +1,6 @@
 {
   "meta": {
     "title": "Input prediction",
-    "description": "When the composer is empty, predicts your next message from the current conversation and shows it as the editor's placeholder. Press Tab to use it or Esc to dismiss it; nothing is sent automatically. Turn it on or off with the icon beside the model selector below the editor: grey is off, dark is on. While on, recent conversation text is sent to your configured model, with additional usage costs. Supports DSH 0.2.2-rc.3 only; incompatible input layouts disable prediction."
+    "description": "When the composer is empty, predicts your next message from the current conversation and shows it as the editor's placeholder. Press Tab to use it or Esc to dismiss it; nothing is sent automatically. Turn it on or off with the icon beside the model selector below the editor: grey is off, dark is on. While on, recent conversation text is sent to your configured model, with additional usage costs. Supports DSH 0.2.2 (from rc.3); incompatible input layouts disable prediction."
   }
 }

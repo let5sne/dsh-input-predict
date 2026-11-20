@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 /** Identifies the loaded Host code; bump with each Host behavior change. */
-const HOST_BUILD = "20261116-host-earlier-users";
+const HOST_BUILD = "20261120-host-rc5";
 const DEFAULTS = Object.freeze({
   enabled: true,
   debounceMs: 900,

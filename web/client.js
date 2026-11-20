@@ -6,7 +6,7 @@ import { createPredictionStore } from './prediction-store.js'
 
 const h = React.createElement
 const NS = 'input-predict'
-const BUILD = '20261116-placeholder3'
+const BUILD = '20261120-rc5'
 /** Toolbar row, left of the model selector. */
 const ICON_SLOT = 'conversation.input.right'
 /** Positioned inside the composer card, over the editor's text column. */

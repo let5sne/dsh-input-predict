@@ -1,4 +1,4 @@
-// Compatibility adapter for the researched DSH 0.2.2-rc.3 DOM. These markers
+// Compatibility adapter for the DSH 0.2.2 DOM (verified on rc.3 and rc.5). These markers
 // are implementation details, not a public editor API. Unknown layouts fail
 // closed. Mutations use only the public revision-guarded InputActions API.
 const CONTENT = '[data-conversation-content]';
